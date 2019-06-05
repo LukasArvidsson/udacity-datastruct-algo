@@ -16,8 +16,8 @@ The program should run in O(n) if not considering the runtime of the built in py
 
 ### Task 3
 
-The program should run in O(2n) if not considering the runtime of the built in python functions like sorted.
+The program should run in O(3n) if not considering the runtime of the built in python functions like sorted. This since the program has three for loops
 
 ### Task 4
 
-The program should run in O(4n) if not considering the runtime of the built in python functions
+The program should run in O(4n) if not considering the runtime of the built in python functions..
