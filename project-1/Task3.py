@@ -25,12 +25,11 @@ for call in calls:
 
     areaCodes.add(areaCode)
 areaCodes = sorted(areaCodes)
-#areaCodes = list(areaCodes)
 
 # print list
-#print("The numbers called by people in Bangalore have codes:")
-# for code in areaCodes:
-# print(code)
+print("The numbers called by people in Bangalore have codes:")
+for code in areaCodes:
+    print(code)
 
 
 # Part B
