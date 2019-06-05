@@ -33,9 +33,6 @@ print("These numbers could be telemarketers: ")
 for number in telemarketers:
     print(number)
 
-# Performance
-# The program should run in O(4n) if not
-# considering the runtime of the built in python functions
 
 """
 TASK 4:

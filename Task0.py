@@ -15,10 +15,6 @@ with open('calls.csv', 'r') as f:
     print("Last record of calls,",
           calls[-1][0], "calls", calls[-1][1], "at time", calls[-1][2], "lasting", calls[-1][3], "seconds")
 
-# Performance
-# The program should run in O(1) if not
-# considering the runtime of the built in python functions
-# like stepping through a list.
 
 """
 TASK 0:

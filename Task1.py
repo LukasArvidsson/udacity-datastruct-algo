@@ -26,9 +26,6 @@ for call in calls:
 print("There are", len(uniqueNumbers),
       "different telephone numbers in the records.")
 
-# Performance
-# The program should run in O(2n) if not
-# considering the runtime of the built in python functions like add.
 
 """
 TASK 1:

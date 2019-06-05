@@ -49,10 +49,6 @@ print("%.2f" % percentCalls,
       "percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.")
 
 
-# Performance
-# The program should run in O(2n) if not
-# considering the runtime of the built in python functions like sorted.
-
 """
 TASK 3:
 (080) is the area code for fixed line telephones in Bangalore.

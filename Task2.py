@@ -23,9 +23,6 @@ numbersList = sorted(callLength, key=callLength.__getitem__, reverse=True)
 print(numbersList[0], "spent the longest time,", callLength[numbersList[0]],
       "seconds, on the phone during September 2016.")
 
-# Performance
-# The program should run in O(n) if not
-# considering the runtime of the built in python functions like sorted.
 
 """
 TASK 2: Which telephone number spent the longest time on the phone
