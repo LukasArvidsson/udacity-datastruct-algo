@@ -16,12 +16,13 @@ with open('calls.csv', 'r') as f:
 # Part A
 areaCodes = set()
 for call in calls:
-    areaCode = re.split(' |\)', call[1])
-    areaCode = areaCode[0]
-    if areaCode[0] == '(':
-        areaCode = areaCode[1:4]
+    if re.findall('^140', call[1]):
+        areaCode = '140'
     else:
-        areaCode = areaCode[0:4]
+        areaCode = re.split(' |\)', call[1])
+        areaCode = areaCode[0]
+        if areaCode[0] == '(':
+            areaCode = areaCode[1:]
 
     areaCodes.add(areaCode)
 areaCodes = sorted(areaCodes)
