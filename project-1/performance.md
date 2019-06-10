@@ -16,8 +16,8 @@ The program should run in O(n) if we consider that the program uses that python 
 
 ### Task 3
 
-The program should run in O(n log n) if we consider that the program uses that python sort method.
+The program should run in O(n log n) if we consider that the program uses that python sort method. We have three for loops that runs in O(n), and we have the sordted which runs in O(n log n), therefore the final efficiency is O(n log n), the if statements are O(1) which makes their impact on efficiency very small.
 
 ### Task 4
 
-The program should run in O(n log n) if we consider that the program uses that python sort method.
+The program should run in O(n log n) if we consider that the program uses that python sort method. We have also four for loops which runs in O(n).
