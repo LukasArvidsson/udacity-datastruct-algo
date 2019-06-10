@@ -18,9 +18,9 @@ for call in calls:
     callLength[call[0]] = callLength.get(call[0], 0) + int(call[3])
     callLength[call[1]] = callLength.get(call[1], 0) + int(call[3])
 
-numbersList = sorted(callLength, key=callLength.__getitem__, reverse=True)
+longestCall = max(callLength, key=callLength.get)
 
-print(numbersList[0], "spent the longest time,", callLength[numbersList[0]],
+print(longestCall, "spent the longest time,", callLength[longestCall],
       "seconds, on the phone during September 2016.")
 
 
