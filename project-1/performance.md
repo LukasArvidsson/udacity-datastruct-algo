@@ -12,7 +12,7 @@ The program should run in O(2n) if not considering the runtime of the built in p
 
 ### Task 2
 
-The program should run in O(n log n) if we consider that the program uses that python sort method.
+The program should run in O(n) if we consider that the program uses that python max method. The for loop runs in O(n), the max runs also in O(n).
 
 ### Task 3
 

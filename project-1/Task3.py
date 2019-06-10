@@ -16,15 +16,29 @@ with open('calls.csv', 'r') as f:
 # Part A
 areaCodes = set()
 for call in calls:
-    if re.findall('^140', call[1]):
-        areaCode = '140'
-    else:
-        areaCode = re.split(' |\)', call[1])
-        areaCode = areaCode[0]
-        if areaCode[0] == '(':
+    # Check if the call is coming from a landline in Bangalore
+    if re.findall('^\(080\)', call[0]):
+
+        # Extract the area code from the receiver
+        areaCode = None
+        # Handle area codes from fixed lines
+        if call[1][0] == '(':
+            areaCode = re.split('\)', call[1])
+            areaCode = areaCode[0]
             areaCode = areaCode[1:]
 
-    areaCodes.add(areaCode)
+        # Handle area codes from mobile numbers
+        elif call[1][0] == '7' or '8' or '9':
+            areaCode = call[1][0:4]
+
+        # Handle area codes from telemarketers
+        elif re.findall('^990', call[1]):
+            areaCode = '140'
+
+        if areaCode != None:
+            areaCodes.add(areaCode)
+
+# Sort the area codes
 areaCodes = sorted(areaCodes)
 
 # print list
